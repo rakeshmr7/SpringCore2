@@ -1,0 +1,181 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+
+       xsi:schemaLocation="
+           http://www.springframework.org/schema/beans
+           https://www.springframework.org/schema/beans/spring-beans.xsd
+
+           http://www.springframework.org/schema/context
+           https://www.springframework.org/schema/context/spring-context.xsd">
+
+
+  <context:component-scan base-package="com.example.spring_core"/> 
+       <bean id = "emp1" class = "com.example.spring_core.Employee">
+        <property name = "id" value = "101"/>
+        <property  name="name" value="Ajay"/>
+        <property  name="sal" value="100000"/>
+       </bean>
+       <bean id = "emp2" class = "com.example.spring_core.Employee">
+        <property name = "id" value = "102"/>
+        <property  name="name" value="Arun"/>
+        <property  name="sal" value="200000"/>
+       </bean>
+
+       <bean id = "dept1" class = "com.example.spring_core.Department">
+        <property name = "deptId" value = "101"/>
+        <property  name="deptName" value="Sales"/>
+        <property name = "emp" ref = "emp1"/>
+       </bean>
+        <bean id = "dept2" class = "com.example.spring_core.Department">
+        <property name = "deptId" value = "102"/>
+        <property  name="deptName" value="IT"/>
+        <property name = "emp" ref = "emp2"/>
+       </bean>
+
+       
+
+
+       <bean id = "bat1" class = "com.example.spring_core.Battery">
+        <property name = "id" value = "101"/>
+        <property  name="brand" value="Amaron"/>
+        </bean>
+       <bean id = "mob1" class = "com.example.spring_core.Mobile">
+        <property name = "id" value = "101"/>
+        <property  name="brand" value="Iphone"/>
+        <property  name="price" value="100000"/>
+        <property name = "battery" ref = "bat1"/>
+       </bean>
+
+       <bean id = "bat2" class = "com.example.spring_core.Battery">
+        <property name = "id" value = "102"/>
+        <property  name="brand" value="Samsung"/>
+        </bean>
+       <bean id = "mob2" class = "com.example.spring_core.Mobile">
+        <property name = "id" value = "102"/>
+        <property  name="brand" value="Samsung"/>
+        <property  name="price" value="30000"/>
+        <property name = "battery" ref = "bat2"/>
+       </bean>
+
+       <!-- //constructor injection -->
+       <!-- <bean id = "emp3" class = "com.example.spring_core.Employee">
+              <constructor-arg index = "0" value = "103"/>
+              <constructor-arg index = "1" value = "Arvind"/>
+              <constructor-arg index = "2" value = "300000"/>
+              <constructor-arg index = "3">
+                <list>
+                    <value>Project X</value>
+                    <value>Project Y</value>
+                    <value>Project Z</value>
+                </list>
+       </bean>
+
+       <bean id = "dept3" class = "com.example.spring_core.Department">
+              <constructor-arg index = "0" value = "103"/>
+              <constructor-arg index = "1" value = "HR"/>
+              <constructor-arg index = "2" ref = "emp3"/>
+       </bean> -->
+
+       <!-- <bean id = "std1" class = "com.example.spring_core.Student">
+              <constructor-arg index = "0" value = "101"/>
+              <constructor-arg index = "1" value = "Mahesh"/>
+              <constructor-arg index = "2" value = "92"/>
+       </bean>
+       <bean id = "clg1" class = "com.example.spring_core.College">
+              <constructor-arg index = "0" value = "101"/>
+              <constructor-arg index = "1" value = "ABC College"/>
+              <constructor-arg index = "2" ref = "std1"/>
+       </bean> -->
+
+       <!-- Autowiring -->
+
+       <bean id = "engine"  class = "com.example.spring_core.Engine">
+        <property name = "id" value = "101"/>
+       </bean>
+
+       <bean id = "car1" class = "com.example.spring_core.Car" autowire = "byName">
+        <property name = "color" value = "White"/>
+        <!-- <property  name="engine" ref="eng1"/> -->
+       </bean>
+
+       <!-- Injecting Collections -->
+
+       <!-- List -->
+       <bean id = "emp4" class = "com.example.spring_core.Employee">
+        <property name = "id" value = "104"/>
+        <property  name="name" value="Rakesh"/>
+        <property  name="sal" value="400000"/>
+        <property name = "projects">
+              <list>
+                <value>Project A</value>
+                <value>Project B</value>
+                <value>Project C</value>
+              </list>
+        </property>
+       </bean>
+
+       <!-- Set -->
+       <bean id = "emp5" class = "com.example.spring_core.Employee">
+        <property name = "id" value = "105"/>
+        <property  name="name" value="Ramesh"/>
+        <property  name="sal" value="500000"/>
+        <property name = "skillSet">
+              <set>
+                <value>Java</value>
+                <value>Spring</value>
+                <value>React</value>
+              </set>
+        </property>
+       </bean>
+
+       <!-- Map -->
+       <bean id = "std2" class = "com.example.spring_core.Student">
+        <property name = "rollno" value = "102"/>
+        <property  name="name" value="Suresh"/>
+        <property  name="marks" value="88"/>
+        <property name = "termMarks">
+              <map>
+                <entry key = "Term1" value = "85"/>
+                <entry key = "Term2" value = "90"/>
+                <entry key = "Term3" value = "89"/>
+              </map>
+        </property>
+       </bean>
+
+       <bean id = "item1" class = "com.example.spring_core.Items" scope = "singleton">
+        <property name = "itemId" value = "101"/>
+        <property  name="itemName" value="Laptop"/>
+        <property  name="price" value="50000"/>
+       </bean>
+
+       <!-- Inner Beans -->
+       <bean id = "dept4" class = "com.example.spring_core.Department">
+        <property name = "deptId" value = "104"/>
+        <property  name="deptName" value="Finance"/>
+        <property name = "emp">
+              <bean class = "com.example.spring_core.Employee">
+                <property name = "id" value = "106"/>
+                <property  name="name" value="Rohit"/>
+                <property  name="sal" value="600000"/>
+              </bean>
+        </property>
+       </bean>
+
+       <!-- Bean Life Cycle -->
+       <!-- <bean id  = "emp6" class = "com.example.spring_core.Employee" 
+                  init-method = "start" destroy-method = "stop">
+        <property name = "id" value = "107"/>
+        <property  name="name" value="Rahul"/>
+        <property  name="sal" value="700000"/>
+       </bean> -->
+
+        <!-- Via Annotations -->
+        
+       <bean id  = "emp7" class = "com.example.spring_core.Employee">
+        <property name = "id" value = "108"/>
+        <property  name="name" value="Rohit"/>
+        <property  name="sal" value="800000"/>
+      </bean>
+
+</beans>

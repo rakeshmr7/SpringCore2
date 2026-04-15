@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="com.example.spring_core.SpringCoreApplicationTests" time="4.322" tests="1" errors="0" skipped="0" failures="0" flakes="0">
+  <properties>
+    <property name="java.specification.version" value="21"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="c:\Users\rakes\Documents\Hexaware\My Work Hexaware\Spring\spring_core\target\test-classes;c:\Users\rakes\Documents\Hexaware\My Work Hexaware\Spring\spring_core\target\classes;C:\Users\rakes\.m2\repository\org\springframework\boot\spring-boot-starter\4.1.0-SNAPSHOT\spring-boot-starter-4.1.0-SNAPSHOT.jar;C:\Users\rakes\.m2\repository\org\springframework\boot\spring-boot-starter-logging\4.1.0-SNAPSHOT\spring-boot-starter-logging-4.1.0-SNAPSHOT.jar;C:\Users\rakes\.m2\repository\ch\qos\logback\logback-classic\1.5.32\logback-classic-1.5.32.jar;C:\Users\rakes\.m2\repository\ch\qos\logback\logback-core\1.5.32\logback-core-1.5.32.jar;C:\Users\rakes\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.25.4\log4j-to-slf4j-2.25.4.jar;C:\Users\rakes\.m2\repository\org\apache\logging\log4j\log4j-api\2.25.4\log4j-api-2.25.4.jar;C:\Users\rakes\.m2\repository\org\slf4j\jul-to-slf4j\2.0.17\jul-to-slf4j-2.0.17.jar;C:\Users\rakes\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\4.1.0-SNAPSHOT\spring-boot-autoconfigure-4.1.0-SNAPSHOT.jar;C:\Users\rakes\.m2\repository\org\springframework\boot\spring-boot\4.1.0-SNAPSHOT\spring-boot-4.1.0-SNAPSHOT.jar;C:\Users\rakes\.m2\repository\org\springframework\spring-context\7.0.7-SNAPSHOT\spring-context-7.0.7-SNAPSHOT.jar;C:\Users\rakes\.m2\repository\org\springframework\spring-aop\7.0.7-SNAPSHOT\spring-aop-7.0.7-SNAPSHOT.jar;C:\Users\rakes\.m2\repository\org\springframework\spring-beans\7.0.7-SNAPSHOT\spring-beans-7.0.7-SNAPSHOT.jar;C:\Users\rakes\.m2\repository\org\springframework\spring-expression\7.0.7-SNAPSHOT\spring-expression-7.0.7-SNAPSHOT.jar;C:\Users\rakes\.m2\repository\io\micrometer\micrometer-observation\1.17.0-SNAPSHOT\micrometer-observation-1.17.0-SNAPSHOT.jar;C:\Users\rakes\.m2\repository\io\micrometer\micrometer-commons\1.17.0-SNAPSHOT\micrometer-commons-1.17.0-SNAPSHOT.jar;C:\Users\rakes\.m2\repository\jakarta\annotation\jakarta.annotation-api\3.0.0\jakarta.annotation-api-3.0.0.jar;C:\Users\rakes\.m2\repository\org\yaml\snakeyaml\2.6\snakeyaml-2.6.jar;C:\Users\rakes\.m2\repository\org\springframework\boot\spring-boot-starter-test\4.1.0-SNAPSHOT\spring-boot-starter-test-4.1.0-SNAPSHOT.jar;C:\Users\rakes\.m2\repository\org\springframework\boot\spring-boot-test\4.1.0-SNAPSHOT\spring-boot-test-4.1.0-SNAPSHOT.jar;C:\Users\rakes\.m2\repository\org\springframework\boot\spring-boot-test-autoconfigure\4.1.0-SNAPSHOT\spring-boot-test-autoconfigure-4.1.0-SNAPSHOT.jar;C:\Users\rakes\.m2\repository\com\jayway\jsonpath\json-path\2.10.0\json-path-2.10.0.jar;C:\Users\rakes\.m2\repository\org\slf4j\slf4j-api\2.0.17\slf4j-api-2.0.17.jar;C:\Users\rakes\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\4.0.4\jakarta.xml.bind-api-4.0.4.jar;C:\Users\rakes\.m2\repository\jakarta\activation\jakarta.activation-api\2.1.4\jakarta.activation-api-2.1.4.jar;C:\Users\rakes\.m2\repository\net\minidev\json-smart\2.6.0\json-smart-2.6.0.jar;C:\Users\rakes\.m2\repository\net\minidev\accessors-smart\2.6.0\accessors-smart-2.6.0.jar;C:\Users\rakes\.m2\repository\org\ow2\asm\asm\9.7.1\asm-9.7.1.jar;C:\Users\rakes\.m2\repository\org\assertj\assertj-core\3.27.7\assertj-core-3.27.7.jar;C:\Users\rakes\.m2\repository\net\bytebuddy\byte-buddy\1.18.8\byte-buddy-1.18.8.jar;C:\Users\rakes\.m2\repository\org\awaitility\awaitility\4.3.0\awaitility-4.3.0.jar;C:\Users\rakes\.m2\repository\org\hamcrest\hamcrest\3.0\hamcrest-3.0.jar;C:\Users\rakes\.m2\repository\org\junit\jupiter\junit-jupiter\6.0.3\junit-jupiter-6.0.3.jar;C:\Users\rakes\.m2\repository\org\junit\jupiter\junit-jupiter-api\6.0.3\junit-jupiter-api-6.0.3.jar;C:\Users\rakes\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\rakes\.m2\repository\org\junit\platform\junit-platform-commons\6.0.3\junit-platform-commons-6.0.3.jar;C:\Users\rakes\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\rakes\.m2\repository\org\junit\jupiter\junit-jupiter-params\6.0.3\junit-jupiter-params-6.0.3.jar;C:\Users\rakes\.m2\repository\org\junit\jupiter\junit-jupiter-engine\6.0.3\junit-jupiter-engine-6.0.3.jar;C:\Users\rakes\.m2\repository\org\junit\platform\junit-platform-engine\6.0.3\junit-platform-engine-6.0.3.jar;C:\Users\rakes\.m2\repository\org\mockito\mockito-core\5.23.0\mockito-core-5.23.0.jar;C:\Users\rakes\.m2\repository\net\bytebuddy\byte-buddy-agent\1.18.8\byte-buddy-agent-1.18.8.jar;C:\Users\rakes\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;C:\Users\rakes\.m2\repository\org\mockito\mockito-junit-jupiter\5.23.0\mockito-junit-jupiter-5.23.0.jar;C:\Users\rakes\.m2\repository\org\skyscreamer\jsonassert\1.5.3\jsonassert-1.5.3.jar;C:\Users\rakes\.m2\repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;C:\Users\rakes\.m2\repository\org\springframework\spring-core\7.0.7-SNAPSHOT\spring-core-7.0.7-SNAPSHOT.jar;C:\Users\rakes\.m2\repository\commons-logging\commons-logging\1.3.6\commons-logging-1.3.6.jar;C:\Users\rakes\.m2\repository\org\jspecify\jspecify\1.0.0\jspecify-1.0.0.jar;C:\Users\rakes\.m2\repository\org\springframework\spring-test\7.0.7-SNAPSHOT\spring-test-7.0.7-SNAPSHOT.jar;C:\Users\rakes\.m2\repository\org\xmlunit\xmlunit-core\2.11.0\xmlunit-core-2.11.0.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="21"/>
+    <property name="APPLICATION_NAME" value="spring_core"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-21\bin"/>
+    <property name="sun.java.command" value="C:\Users\rakes\AppData\Local\Temp\surefire12285565429959565801\surefirebooter-20260413122107783_3.jar C:\Users\rakes\AppData\Local\Temp\surefire12285565429959565801 2026-04-13T12-21-07_563-jvmRun1 surefire-20260413122107783_1tmp surefire_0-20260413122107783_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="c:\Users\rakes\Documents\Hexaware\My Work Hexaware\Spring\spring_core\target\test-classes;c:\Users\rakes\Documents\Hexaware\My Work Hexaware\Spring\spring_core\target\classes;C:\Users\rakes\.m2\repository\org\springframework\boot\spring-boot-starter\4.1.0-SNAPSHOT\spring-boot-starter-4.1.0-SNAPSHOT.jar;C:\Users\rakes\.m2\repository\org\springframework\boot\spring-boot-starter-logging\4.1.0-SNAPSHOT\spring-boot-starter-logging-4.1.0-SNAPSHOT.jar;C:\Users\rakes\.m2\repository\ch\qos\logback\logback-classic\1.5.32\logback-classic-1.5.32.jar;C:\Users\rakes\.m2\repository\ch\qos\logback\logback-core\1.5.32\logback-core-1.5.32.jar;C:\Users\rakes\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.25.4\log4j-to-slf4j-2.25.4.jar;C:\Users\rakes\.m2\repository\org\apache\logging\log4j\log4j-api\2.25.4\log4j-api-2.25.4.jar;C:\Users\rakes\.m2\repository\org\slf4j\jul-to-slf4j\2.0.17\jul-to-slf4j-2.0.17.jar;C:\Users\rakes\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\4.1.0-SNAPSHOT\spring-boot-autoconfigure-4.1.0-SNAPSHOT.jar;C:\Users\rakes\.m2\repository\org\springframework\boot\spring-boot\4.1.0-SNAPSHOT\spring-boot-4.1.0-SNAPSHOT.jar;C:\Users\rakes\.m2\repository\org\springframework\spring-context\7.0.7-SNAPSHOT\spring-context-7.0.7-SNAPSHOT.jar;C:\Users\rakes\.m2\repository\org\springframework\spring-aop\7.0.7-SNAPSHOT\spring-aop-7.0.7-SNAPSHOT.jar;C:\Users\rakes\.m2\repository\org\springframework\spring-beans\7.0.7-SNAPSHOT\spring-beans-7.0.7-SNAPSHOT.jar;C:\Users\rakes\.m2\repository\org\springframework\spring-expression\7.0.7-SNAPSHOT\spring-expression-7.0.7-SNAPSHOT.jar;C:\Users\rakes\.m2\repository\io\micrometer\micrometer-observation\1.17.0-SNAPSHOT\micrometer-observation-1.17.0-SNAPSHOT.jar;C:\Users\rakes\.m2\repository\io\micrometer\micrometer-commons\1.17.0-SNAPSHOT\micrometer-commons-1.17.0-SNAPSHOT.jar;C:\Users\rakes\.m2\repository\jakarta\annotation\jakarta.annotation-api\3.0.0\jakarta.annotation-api-3.0.0.jar;C:\Users\rakes\.m2\repository\org\yaml\snakeyaml\2.6\snakeyaml-2.6.jar;C:\Users\rakes\.m2\repository\org\springframework\boot\spring-boot-starter-test\4.1.0-SNAPSHOT\spring-boot-starter-test-4.1.0-SNAPSHOT.jar;C:\Users\rakes\.m2\repository\org\springframework\boot\spring-boot-test\4.1.0-SNAPSHOT\spring-boot-test-4.1.0-SNAPSHOT.jar;C:\Users\rakes\.m2\repository\org\springframework\boot\spring-boot-test-autoconfigure\4.1.0-SNAPSHOT\spring-boot-test-autoconfigure-4.1.0-SNAPSHOT.jar;C:\Users\rakes\.m2\repository\com\jayway\jsonpath\json-path\2.10.0\json-path-2.10.0.jar;C:\Users\rakes\.m2\repository\org\slf4j\slf4j-api\2.0.17\slf4j-api-2.0.17.jar;C:\Users\rakes\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\4.0.4\jakarta.xml.bind-api-4.0.4.jar;C:\Users\rakes\.m2\repository\jakarta\activation\jakarta.activation-api\2.1.4\jakarta.activation-api-2.1.4.jar;C:\Users\rakes\.m2\repository\net\minidev\json-smart\2.6.0\json-smart-2.6.0.jar;C:\Users\rakes\.m2\repository\net\minidev\accessors-smart\2.6.0\accessors-smart-2.6.0.jar;C:\Users\rakes\.m2\repository\org\ow2\asm\asm\9.7.1\asm-9.7.1.jar;C:\Users\rakes\.m2\repository\org\assertj\assertj-core\3.27.7\assertj-core-3.27.7.jar;C:\Users\rakes\.m2\repository\net\bytebuddy\byte-buddy\1.18.8\byte-buddy-1.18.8.jar;C:\Users\rakes\.m2\repository\org\awaitility\awaitility\4.3.0\awaitility-4.3.0.jar;C:\Users\rakes\.m2\repository\org\hamcrest\hamcrest\3.0\hamcrest-3.0.jar;C:\Users\rakes\.m2\repository\org\junit\jupiter\junit-jupiter\6.0.3\junit-jupiter-6.0.3.jar;C:\Users\rakes\.m2\repository\org\junit\jupiter\junit-jupiter-api\6.0.3\junit-jupiter-api-6.0.3.jar;C:\Users\rakes\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\rakes\.m2\repository\org\junit\platform\junit-platform-commons\6.0.3\junit-platform-commons-6.0.3.jar;C:\Users\rakes\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\rakes\.m2\repository\org\junit\jupiter\junit-jupiter-params\6.0.3\junit-jupiter-params-6.0.3.jar;C:\Users\rakes\.m2\repository\org\junit\jupiter\junit-jupiter-engine\6.0.3\junit-jupiter-engine-6.0.3.jar;C:\Users\rakes\.m2\repository\org\junit\platform\junit-platform-engine\6.0.3\junit-platform-engine-6.0.3.jar;C:\Users\rakes\.m2\repository\org\mockito\mockito-core\5.23.0\mockito-core-5.23.0.jar;C:\Users\rakes\.m2\repository\net\bytebuddy\byte-buddy-agent\1.18.8\byte-buddy-agent-1.18.8.jar;C:\Users\rakes\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;C:\Users\rakes\.m2\repository\org\mockito\mockito-junit-jupiter\5.23.0\mockito-junit-jupiter-5.23.0.jar;C:\Users\rakes\.m2\repository\org\skyscreamer\jsonassert\1.5.3\jsonassert-1.5.3.jar;C:\Users\rakes\.m2\repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;C:\Users\rakes\.m2\repository\org\springframework\spring-core\7.0.7-SNAPSHOT\spring-core-7.0.7-SNAPSHOT.jar;C:\Users\rakes\.m2\repository\commons-logging\commons-logging\1.3.6\commons-logging-1.3.6.jar;C:\Users\rakes\.m2\repository\org\jspecify\jspecify\1.0.0\jspecify-1.0.0.jar;C:\Users\rakes\.m2\repository\org\springframework\spring-test\7.0.7-SNAPSHOT\spring-test-7.0.7-SNAPSHOT.jar;C:\Users\rakes\.m2\repository\org\xmlunit\xmlunit-core\2.11.0\xmlunit-core-2.11.0.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\rakes"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2025-10-21"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-21"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="c:\Users\rakes\Documents\Hexaware\My Work Hexaware\Spring\spring_core"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="FILE_LOG_CHARSET" value="UTF-8"/>
+    <property name="java.awt.headless" value="true"/>
+    <property name="surefire.real.class.path" value="C:\Users\rakes\AppData\Local\Temp\surefire12285565429959565801\surefirebooter-20260413122107783_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="21.0.9+7-LTS-338"/>
+    <property name="user.name" value="rakes"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\rakes\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\rakes\AppData\Local\Temp\"/>
+    <property name="java.version" value="21.0.9"/>
+    <property name="user.dir" value="c:\Users\rakes\Documents\Hexaware\My Work Hexaware\Spring\spring_core"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="PID" value="18408"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="CONSOLE_LOG_CHARSET" value="UTF-8"/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-21\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Users\rakes\anaconda3\condabin;C:\Users\rakes\AppData\Local\Programs\Microsoft VS Code;C:\oraclexe\app\oracle\product\10.2.0\server\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Users\rakes\AppData\Local\Programs\Python\Python3.11;C:\Users\rakes\AppData\Local\Microsoft\WindowsApps\python3.11.exe;C:\Program Files\Git\cmd;C:\Program Files\Kotlin\kotlinc\bin;C:\Program Files\Tesseract-OCR;C:\Users\rakes\anaconda3\Scripts;C:\Program Files\swipl\bin;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\Mongosh\mongosh-2.5.8-win32-x64\bin;C:\Program Files\Java\jdk-21\bin;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Program Files\nodejs\;C:\Users\rakes\AppData\Roaming\npm;C:\ProgramData\chocolatey\bin;C:\ProgramData\chocolatey\lib\maven\apache-maven-3.9.12\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\rakes\AppData\Local\Programs\Python\Python312\Scripts\;C:\Users\rakes\AppData\Local\Programs\Python\Python312\;C:\Users\rakes\AppData\Local\Microsoft\WindowsApps;C:\Users\rakes\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\rakes\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311;C:\src\flutter\bin;C:\msys64\ucrt64\bin;C:\Program Files\Tesseract-OCR;C:\Users\rakes\.dotnet\tools;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2025.1.3\bin;;C:\Users\rakes\AppData\Roaming\npm;F:\PGM_FILES\Antigravity\bin;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="21.0.9+7-LTS-338"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="65.0"/>
+    <property name="LOGGED_APPLICATION_NAME" value="[spring_core] "/>
+  </properties>
+  <testcase name="contextLoads" classname="com.example.spring_core.SpringCoreApplicationTests" time="1.266">
+    <system-out><![CDATA[12:21:10.064 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.example.spring_core.SpringCoreApplicationTests]: SpringCoreApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+12:21:10.727 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.example.spring_core.SpringCoreApplication for test class com.example.spring_core.SpringCoreApplicationTests
+12:21:10.937 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.example.spring_core.SpringCoreApplicationTests]: SpringCoreApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+12:21:10.939 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.example.spring_core.SpringCoreApplication for test class com.example.spring_core.SpringCoreApplicationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::       (v4.1.0-SNAPSHOT)
+
+2026-04-13T12:21:11.748+05:30  INFO 18408 --- [spring_core] [           main] c.e.s.SpringCoreApplicationTests         : Starting SpringCoreApplicationTests using Java 21.0.9 with PID 18408 (started by rakes in c:\Users\rakes\Documents\Hexaware\My Work Hexaware\Spring\spring_core)
+2026-04-13T12:21:11.751+05:30  INFO 18408 --- [spring_core] [           main] c.e.s.SpringCoreApplicationTests         : No active profile set, falling back to 1 default profile: "default"
+2026-04-13T12:21:11.752+05:30 DEBUG 18408 --- [spring_core] [           main] o.s.boot.SpringApplication               : Loading source class com.example.spring_core.SpringCoreApplication
+2026-04-13T12:21:12.387+05:30 DEBUG 18408 --- [spring_core] [           main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+
+============================
+CONDITIONS EVALUATION REPORT
+============================
+
+
+Positive matches:
+-----------------
+
+   AopAutoConfiguration matched:
+      - @ConditionalOnBooleanProperty (spring.aop.auto=true) matched (OnPropertyCondition)
+
+   AopAutoConfiguration.ClassProxyingConfiguration matched:
+      - @ConditionalOnMissingClass did not find unwanted class 'org.aspectj.weaver.Advice' (OnClassCondition)
+      - @ConditionalOnBooleanProperty (spring.aop.proxy-target-class=true) matched (OnPropertyCondition)
+
+   ApplicationAvailabilityAutoConfiguration#applicationAvailability matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.availability.ApplicationAvailability; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   LifecycleAutoConfiguration#defaultLifecycleProcessor matched:
+      - @ConditionalOnMissingBean (names: lifecycleProcessor; SearchStrategy: current) did not find any beans (OnBeanCondition)
+
+   PropertyPlaceholderAutoConfiguration#propertySourcesPlaceholderConfigurer matched:
+      - @ConditionalOnMissingBean (types: org.springframework.context.support.PropertySourcesPlaceholderConfigurer; SearchStrategy: current) did not find any beans (OnBeanCondition)
+
+   SslAutoConfiguration#sslBundleRegistry matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.ssl.SslBundleRegistry,org.springframework.boot.ssl.SslBundles; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   TaskExecutionAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor' (OnClassCondition)
+
+   TaskExecutorConfigurations.AsyncConfigurerConfiguration matched:
+      - @ConditionalOnMissingBean (types: org.springframework.scheduling.annotation.AsyncConfigurer; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   TaskExecutorConfigurations.SimpleAsyncTaskExecutorBuilderConfiguration#simpleAsyncTaskExecutorBuilder matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.task.SimpleAsyncTaskExecutorBuilder; SearchStrategy: all) did not find any beans (OnBeanCondition)
+      - @ConditionalOnThreading found PLATFORM (OnThreadingCondition)
+
+   TaskExecutorConfigurations.TaskExecutorConfiguration matched:
+      - AnyNestedCondition 1 matched 1 did not; NestedCondition on TaskExecutorConfigurations.OnExecutorCondition.ModelCondition @ConditionalOnProperty (spring.task.execution.mode=force) did not find property 'spring.task.execution.mode'; NestedCondition on TaskExecutorConfigurations.OnExecutorCondition.ExecutorBeanCondition @ConditionalOnMissingBean (types: java.util.concurrent.Executor; SearchStrategy: all) did not find any beans (TaskExecutorConfigurations.OnExecutorCondition)
+
+   TaskExecutorConfigurations.TaskExecutorConfiguration#applicationTaskExecutor matched:
+      - @ConditionalOnThreading found PLATFORM (OnThreadingCondition)
+
+   TaskExecutorConfigurations.ThreadPoolTaskExecutorBuilderConfiguration#threadPoolTaskExecutorBuilder matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.task.ThreadPoolTaskExecutorBuilder; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   TaskSchedulingAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler' (OnClassCondition)
+
+   TaskSchedulingConfigurations.SimpleAsyncTaskSchedulerBuilderConfiguration#simpleAsyncTaskSchedulerBuilder matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.task.SimpleAsyncTaskSchedulerBuilder; SearchStrategy: all) did not find any beans (OnBeanCondition)
+      - @ConditionalOnThreading found PLATFORM (OnThreadingCondition)
+
+   TaskSchedulingConfigurations.ThreadPoolTaskSchedulerBuilderConfiguration#threadPoolTaskSchedulerBuilder matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.task.ThreadPoolTaskSchedulerBuilder; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+
+Negative matches:
+-----------------
+
+   AopAutoConfiguration.AspectJAutoProxyingConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.aspectj.weaver.Advice' (OnClassCondition)
+
+   JmxAutoConfiguration:
+      Did not match:
+         - @ConditionalOnBooleanProperty (spring.jmx.enabled=true) found different value in property 'spring.jmx.enabled' (OnPropertyCondition)
+      Matched:
+         - @ConditionalOnClass found required class 'org.springframework.jmx.export.MBeanExporter' (OnClassCondition)
+
+   MessageSourceAutoConfiguration:
+      Did not match:
+         - ResourceBundle did not find bundle with basename messages (MessageSourceAutoConfiguration.ResourceBundleCondition)
+
+   ProjectInfoAutoConfiguration#buildProperties:
+      Did not match:
+         - @ConditionalOnResource did not find resource '${spring.info.build.location:classpath:META-INF/build-info.properties}' (OnResourceCondition)
+
+   ProjectInfoAutoConfiguration#gitProperties:
+      Did not match:
+         - GitResource did not find git info at classpath:git.properties (ProjectInfoAutoConfiguration.GitResourceAvailableCondition)
+
+   SpringApplicationAdminJmxAutoConfiguration:
+      Did not match:
+         - @ConditionalOnBooleanProperty (spring.application.admin.enabled=true) did not find property 'spring.application.admin.enabled' (OnPropertyCondition)
+
+   TaskExecutorConfigurations.AsyncConfigurerWrapperConfiguration:
+      Did not match:
+         - @ConditionalOnBean (types: org.springframework.scheduling.annotation.AsyncConfigurer; SearchStrategy: all) did not find any beans of type org.springframework.scheduling.annotation.AsyncConfigurer (OnBeanCondition)
+
+   TaskExecutorConfigurations.SimpleAsyncTaskExecutorBuilderConfiguration#simpleAsyncTaskExecutorBuilderVirtualThreads:
+      Did not match:
+         - @ConditionalOnMissingBean (types: org.springframework.boot.task.SimpleAsyncTaskExecutorBuilder; SearchStrategy: all) found beans of type 'org.springframework.boot.task.SimpleAsyncTaskExecutorBuilder' simpleAsyncTaskExecutorBuilder (OnBeanCondition)
+
+   TaskExecutorConfigurations.TaskExecutorConfiguration#applicationTaskExecutorVirtualThreads:
+      Did not match:
+         - @ConditionalOnThreading did not find VIRTUAL (OnThreadingCondition)
+
+   TaskExecutorConfigurations.TaskExecutorContextPropagationConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'io.micrometer.context.ContextSnapshot' (OnClassCondition)
+
+   TaskSchedulingAutoConfiguration#scheduledBeanLazyInitializationExcludeFilter:
+      Did not match:
+         - @ConditionalOnBean (names: org.springframework.scheduling.config.internalScheduledAnnotationProcessor; SearchStrategy: all) did not find any beans named org.springframework.scheduling.config.internalScheduledAnnotationProcessor (OnBeanCondition)
+
+   TaskSchedulingConfigurations.SimpleAsyncTaskSchedulerBuilderConfiguration#simpleAsyncTaskSchedulerBuilderVirtualThreads:
+      Did not match:
+         - @ConditionalOnMissingBean (types: org.springframework.boot.task.SimpleAsyncTaskSchedulerBuilder; SearchStrategy: all) found beans of type 'org.springframework.boot.task.SimpleAsyncTaskSchedulerBuilder' simpleAsyncTaskSchedulerBuilder (OnBeanCondition)
+
+   TaskSchedulingConfigurations.TaskSchedulerConfiguration:
+      Did not match:
+         - @ConditionalOnBean (names: org.springframework.scheduling.config.internalScheduledAnnotationProcessor; SearchStrategy: all) did not find any beans named org.springframework.scheduling.config.internalScheduledAnnotationProcessor (OnBeanCondition)
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    org.springframework.boot.autoconfigure.context.ConfigurationPropertiesAutoConfiguration
+
+    org.springframework.boot.autoconfigure.ssl.SslAutoConfiguration
+
+    org.springframework.boot.autoconfigure.context.LifecycleAutoConfiguration
+
+    org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration
+
+    org.springframework.boot.autoconfigure.availability.ApplicationAvailabilityAutoConfiguration
+
+    org.springframework.boot.autoconfigure.info.ProjectInfoAutoConfiguration
+
+
+
+2026-04-13T12:21:12.389+05:30  INFO 18408 --- [spring_core] [           main] c.e.s.SpringCoreApplicationTests         : Started SpringCoreApplicationTests in 1.316 seconds (process running for 4.399)
+2026-04-13T12:21:12.393+05:30 DEBUG 18408 --- [spring_core] [           main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state LivenessState changed to CORRECT
+2026-04-13T12:21:12.395+05:30 DEBUG 18408 --- [spring_core] [           main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+]]></system-out>
+    <system-err><![CDATA[Mockito is currently self-attaching to enable the inline-mock-maker. This will no longer work in future releases of the JDK. Please add Mockito as an agent to your build as described in Mockito's documentation: https://javadoc.io/doc/org.mockito/mockito-core/latest/org.mockito/org/mockito/Mockito.html#0.3
+WARNING: A Java agent has been loaded dynamically (C:\Users\rakes\.m2\repository\net\bytebuddy\byte-buddy-agent\1.18.8\byte-buddy-agent-1.18.8.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+]]></system-err>
+  </testcase>
+</testsuite>
